@@ -102,8 +102,7 @@ public class EgovBBSManageAPIController {
 	 */
 	@RequestMapping(value = "/cop/bbs/selectBoardListAPI.do", consumes = MediaType.APPLICATION_JSON_VALUE)
 	@ResponseBody
-	public ResultVO selectBoardArticles(@RequestBody BoardVO boardVO)
-		throws Exception {
+	public ResultVO selectBoardArticles(@RequestBody BoardVO boardVO) throws Exception {
 		ResultVO resultVO = new ResultVO();
 
 		LoginVO user = (LoginVO)EgovUserDetailsHelper.getAuthenticatedUser();

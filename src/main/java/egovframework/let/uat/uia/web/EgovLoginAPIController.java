@@ -74,6 +74,8 @@ public class EgovLoginAPIController {
 		// 1. 일반 로그인 처리
 		LoginVO loginResultVO = loginService.actionLogin(loginVO);
 
+		System.out.println("----------"+loginVO.getId()+"|"+loginVO.getPassword());
+
 		boolean loginPolicyYn = true;
 
 		if (loginResultVO != null && loginResultVO.getId() != null && !loginResultVO.getId().equals("") && loginPolicyYn) {
